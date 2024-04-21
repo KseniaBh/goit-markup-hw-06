@@ -49,6 +49,69 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="open-menu-btn">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-open-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <ul class="mobile-menu-list">
+            <li>
+              <a class="mobile-menu-link menu-clr" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li><a class="mobile-menu-link" href="">Portfolio</a></li>
+            <li><a class="mobile-menu-link" href="">Contacts</a></li>
+          </ul>
+
+          <ul class="mobile-address-list">
+            <li>
+              <a
+                class="mobile-address-item address-clr"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-address-item" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mob-menu-soc">
+            <li class="soc-net-icon-size">
+              <a href="" class="soc-net-icon-bg">
+                <svg class="soc-net-icon" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-net-icon-size">
+              <a href="" class="soc-net-icon-bg">
+                <svg class="soc-net-icon" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-net-icon-size">
+              <a href="" class="soc-net-icon-bg">
+                <svg class="soc-net-icon" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-net-icon-size">
+              <a href="" class="soc-net-icon-bg">
+                <svg class="soc-net-icon" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -59,7 +122,7 @@
         </div>
       </section>
       <!-- Advantages -->
-      <section class="section-adv">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden" hidden>Advantages</h2>
           <ul class="ul-advantages">
@@ -115,13 +178,18 @@
         </div>
       </section>
       <!-- Team -->
-      <section class="team">
-        <div class="container">
+      <section class="section team">
+        <div class="container sec-team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-row">
             <li class="team-portfolio">
               <img
-                src="./images/TeamCard1.jpg"
+                class="sec-three-picture"
+                srcset="
+                  ./images/mob-TeamCard1-1x.jpg 1x,
+                  ./images/mob-TeamCard1-2x.jpg 2x
+                "
+                src="./images/mob-TeamCard1-1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -163,7 +231,12 @@
             </li>
             <li class="team-portfolio">
               <img
-                src="./images/TeamCard2.jpg"
+                class="sec-three-picture"
+                srcset="
+                  ./images/mob-TeamCard2-1x.jpg 1x,
+                  ./images/mob-TeamCard2-2x.jpg 2x
+                "
+                src="./images/mob-TeamCard2-1x.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -205,7 +278,12 @@
             </li>
             <li class="team-portfolio">
               <img
-                src="./images/TeamCard3.jpg"
+                class="sec-three-picture"
+                srcset="
+                  ./images/mob-TeamCard3-1x.jpg 1x,
+                  ./images/mob-TeamCard3-2x.jpg 2x
+                "
+                src="./images/mob-TeamCard3-1x.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -247,7 +325,12 @@
             </li>
             <li class="team-portfolio">
               <img
-                src="./images/TeamCard4.jpg"
+                class="sec-three-picture"
+                srcset="
+                  ./images/mob-TeamCard4-1x.jpg 1x,
+                  ./images/mob-TeamCard4-2x.jpg 2x
+                "
+                src="./images/mob-TeamCard4-1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -291,17 +374,19 @@
         </div>
       </section>
       <!-- Portfolio -->
-      <section class="portfolio">
+      <section class="section portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-menu">
             <li class="portfolio-item">
               <div class="overlay-container">
                 <img
+                  srcset="
+                    ./images/mob-img1-1x.jpg 1x,
+                    ./images/mob-img1-2x.jpg 2x
+                  "
                   src="./images/img.jpg"
                   alt="Banking"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -317,10 +402,12 @@
             <li class="portfolio-item">
               <div class="overlay-container">
                 <img
+                  srcset="
+                    ./images/mob-img2-1x.jpg 1x,
+                    ./images/mob-img2-2x.jpg 2x
+                  "
                   src="./images/img1.jpg"
                   alt="Payment"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -336,10 +423,12 @@
             <li class="portfolio-item">
               <div class="overlay-container">
                 <img
+                  srcset="
+                    ./images/mob-img3-1x.jpg 1x,
+                    ./images/mob-img3-2x.jpg 2x
+                  "
                   src="./images/img2.jpg"
                   alt="Meditation"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -355,10 +444,12 @@
             <li class="portfolio-item">
               <div class="overlay-container">
                 <img
+                  srcset="
+                    ./images/mob-img4-1x.jpg 1x,
+                    ./images/mob-img4-2x.jpg 2x
+                  "
                   src="./images/img3.jpg"
                   alt="Taxi"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -374,10 +465,12 @@
             <li class="portfolio-item">
               <div class="overlay-container">
                 <img
+                  srcset="
+                    ./images/mob-img5-1x.jpg 1x,
+                    ./images/mob-img5-2x.jpg 2x
+                  "
                   src="./images/img4.jpg"
                   alt="Screen"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -393,10 +486,12 @@
             <li class="portfolio-item">
               <div class="overlay-container">
                 <img
+                  srcset="
+                    ./images/mob-img6-1x.jpg 1x,
+                    ./images/mob-img6-2x.jpg 2x
+                  "
                   src="./images/img5.jpg"
                   alt="Courses"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
