@@ -451,6 +451,7 @@ img {
 .portfolio-item {
   width: 100%;
   margin: 0 auto;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -526,7 +527,7 @@ img {
   font-family: "Raleway", sans-serif;
   color: #4d5ae5;
   text-decoration: none;
-  margin-left: 90px;
+
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -534,15 +535,12 @@ img {
   color: #f4f4fd;
   text-decoration: none;
 }
-.container-footer-link {
-  margin-left: 80px;
-  margin-right: 80px;
-}
+
 .social-media {
   color: white;
-  text-align: left;
+  text-align: center;
   margin-bottom: 16px;
-  margin-left: 60px;
+  font-weight: 500;
 }
 .footer-link-list {
   display: flex;
@@ -572,13 +570,14 @@ img {
 .footer-container-logo {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .footer-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  gap: 72px;
+  gap: 72px 24px;
 }
 .subscribe-container {
   display: flex;
@@ -588,9 +587,8 @@ img {
 }
 .subscribe-title {
   color: white;
-  align-self: start;
+  font-weight: 500;
   margin-bottom: 16px;
-  margin-left: 100px;
 }
 .subscribe-form {
   display: flex;
@@ -601,7 +599,7 @@ img {
 }
 
 .subscribe-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   padding-left: 16px;
   font-size: 12px;
@@ -612,6 +610,8 @@ img {
   background-color: transparent;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #fff;
+  border-radius: 4px;
 }
 .subscribe-input::placeholder {
   font-weight: 400;
@@ -755,9 +755,7 @@ img {
   display: flex;
   align-items: center;
 }
-.modal-icon-check {
-  flex-shrink: 0;
-}
+
 .modal-input-div {
   position: relative;
 }
@@ -815,9 +813,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  flex-direction: row;
-  justify-content: start;
   align-items: center;
+  display: flex;
 }
 .modal-icon-checkbox {
   width: 16px;
@@ -833,6 +830,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
 }
 
 .checkbox-checked:checked + .checkbox-label > .modal-icon-checkbox {
@@ -974,6 +972,7 @@ p {
     line-height: 1.5;
     color: #434455;
     letter-spacing: 0.02em;
+    text-decoration: none;
   }
   .contacts-info:hover,
   .contacts-info:focus {
@@ -1016,7 +1015,7 @@ p {
     line-height: 1.07;
     width: auto;
     max-width: 496px;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
   }
   .section {
     padding-top: 96px;
@@ -1074,20 +1073,18 @@ p {
     background-color: #2e2f42;
     padding-top: 96px;
     padding-bottom: 96px;
-    height: 456px;
   }
   .footer-container {
     align-items: baseline;
     flex-direction: row;
     justify-content: start;
-    column-gap: 0;
-    width: auto;
     text-align: start;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 108px;
   }
   .footer-container-logo {
-    margin-right: 24px;
+    width: 264px;
   }
   .logo-footer {
     margin-bottom: 16px;
@@ -1096,9 +1093,7 @@ p {
   .advertisement {
     width: 264px;
   }
-  .container-footer-link {
-    margin-right: 80px;
-  }
+
   .social-media {
     text-align: left;
   }
@@ -1110,8 +1105,6 @@ p {
     background-color: #31d0aa;
   }
   .subscribe-container {
-    width: 453px;
-    height: 80px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -1122,7 +1115,6 @@ p {
   .subscribe-form {
     flex-direction: row;
     gap: 24px;
-    margin-bottom: 96px;
   }
   .subscribe-input {
     width: 264px;
@@ -1357,6 +1349,7 @@ p {
   .portfolio-item {
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
   }
   .portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
